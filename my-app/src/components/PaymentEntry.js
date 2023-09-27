@@ -1,10 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
+
 
 const PaymentEntry = () => {
     
     const location = useLocation();
-
+    
     return (
         <div>
             <h1>

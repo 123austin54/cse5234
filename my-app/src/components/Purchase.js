@@ -1,17 +1,21 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Purchase = () => {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
     // order is the value and setOrder is a function to update the value
     const [order, setOrder] = useState({
         buyQuantity: [0,0,0,0,0], credit_card_number: '', expir_date: '', cvvCode: '', 
         card_holder_name: '', address_1: '', address_2: '', city: '', state: '', zip: '',
-    
     });
-    const navigate = useNavigate();
+    
+    
 
     const handleSubmit = (e) => {
-        navigate('/purchase/paymentEntry', {order: order, setOrder: setOrder});
+        navigate('/purchase/paymentEntry', {state: {order: order}})
     }
 
     console.log('order: ', order);
