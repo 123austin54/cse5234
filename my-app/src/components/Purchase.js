@@ -5,6 +5,7 @@ const Purchase = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
+    
 
     // order is the value and setOrder is a function to update the value
     const [order, setOrder] = useState({
