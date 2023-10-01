@@ -19,8 +19,6 @@ const Purchase = () => {
         navigate('/purchase/paymentEntry', {state: {order: order}})
     }
 
-    console.log('order: ', order);
-
     return (
         <div>
             {/* when form is submitted handleSubmit will trigger and nav to payEntry */}
