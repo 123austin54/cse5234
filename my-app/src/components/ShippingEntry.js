@@ -23,7 +23,7 @@ const ShippingEntry = () => {
             case 'state':
                 location.state.order.state = value;
                 break;
-            case 'state':
+            case 'zip':
                 location.state.order.zip = value;
                 break;
             default:
