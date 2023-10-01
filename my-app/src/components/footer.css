@@ -1,0 +1,7 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    clip: rect(40px,2000px,260px,0px);
+}

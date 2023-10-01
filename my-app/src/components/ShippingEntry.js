@@ -38,35 +38,33 @@ const ShippingEntry = () => {
 
     return (
         <div>
-            <h1>
+            <h3>
                 Enter your shipping information:
 
-            </h1>
-            <h2>
+            </h3>
+            <h4>
                 Your order:
                 <br />
-                Product 1: {location.state.order.buyQuantity[0]}
+                Product 1: {location.state.order.buyQuantity[0]} Product 2: {location.state.order.buyQuantity[1]}
                 <br />
-                Product 2: {location.state.order.buyQuantity[1]}
-                <br />
-            </h2>
+            </h4>
 
             <div>
                 <form onSubmit={submitForm}>
-                    <label htmlFor="address1">Address line 1</label>
-                    <input type='text' id="address1" name="address1" onChange={handleInputChange} required /> <br /><br />
+                    <label htmlFor="address1">Address line 1: </label>
+                    <input type='text' id="address1" name="address1" onChange={handleInputChange} required /> <br />
 
-                    <label htmlFor="address2">Address line 2</label>
-                    <input type='text' id="address2" name="address2" onChange={handleInputChange} /> <br /><br />
+                    <label htmlFor="address2">Address line 2: </label>
+                    <input type='text' id="address2" name="address2" onChange={handleInputChange} /> <br />
 
-                    <label htmlFor="city">City</label>
-                    <input type="text" id="city" name="city" onChange={handleInputChange} required /><br /><br />
+                    <label htmlFor="city">City: </label>
+                    <input type="text" id="city" name="city" onChange={handleInputChange} required /><br />
 
-                    <label htmlFor="state">State</label>
-                    <input type="text" id="state" name="state" onChange={handleInputChange} required /><br /><br />
+                    <label htmlFor="state">State: </label>
+                    <input type="text" id="state" name="state" onChange={handleInputChange} required /><br />
 
-                    <label htmlFor="zip">Zipcode</label>
-                    <input type="text" id="zip" name="zip" onChange={handleInputChange} required /><br /><br />
+                    <label htmlFor="zip">Zipcode: </label>
+                    <input type="text" id="zip" name="zip" onChange={handleInputChange} required /><br />
 
                     <button type="submit">Next</button>
                 </form>

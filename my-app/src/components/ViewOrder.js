@@ -13,7 +13,7 @@ const ViewOrder = () => {
 
     return (
         <div>
-        <h2>
+        <h3>
             Your order:
             <br />
             Product 1: {location.state.order.buyQuantity[0]}
@@ -40,7 +40,7 @@ const ViewOrder = () => {
                 <button type="submit">Next</button>
 
             </form>
-        </h2>
+        </h3>
     </div>
     );
 };
