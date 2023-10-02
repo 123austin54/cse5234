@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.background-image {
+  background-image: url('./images/fighter-jet-bg.jpg'); /* Path to your image from the public directory */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+}

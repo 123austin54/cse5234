@@ -1,9 +1,8 @@
 import React from "react";
-
 const About = () => {
-  
+
   return (
-    <div>
+    <div class='background-image'>
       <h1>
         about page
       </h1>
