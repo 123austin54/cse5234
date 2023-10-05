@@ -13,6 +13,8 @@ import Home from './components/home';
 import About from './components/about';
 import Cart from './components/cart';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <div className="App">
@@ -23,9 +25,9 @@ function App() {
       <Route path='/home' element={<Home/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/cart' element={<Cart/>} />
-
+      
       <Route path='/purchase' element={<Purchase/>} />
-      <Route path="/" element={<Navigate replace to="/purchase" />} />
+      <Route path="/" element={<Navigate replace to="/home" />} />
       <Route path='/purchase/paymentEntry' element={<PaymentEntry/>} />
       <Route path='/purchase/shippingEntry' element={<ShippingEntry/>} />
       <Route path='/purchase/viewOrder' element={<ViewOrder/>} />
